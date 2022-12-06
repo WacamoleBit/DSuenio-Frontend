@@ -4,16 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DSueño Web</title>
+    <link rel="stylesheet" href="../../css/mi-navbar.css">
+    <link rel="stylesheet" href="../../css/dsueño.css">
+    <title>DSueño</title>
 </head>
 <body>
-    <nav id="navbar">
+    <nav class="navbar">
         <ul>
             <li><a href="#">DSueño</a></li>
-            <li><a href="#">Cuenta</a></li>
+            <li class="dropdown" id="cuenta">
+                <a href="#">Cuenta</a>
+                <nav class="contenido-dropdown">
+                    <a href="#">Cambiar contraseña</a>
+                    <a href="#">Cerrar sesión</a>
+                </nav>
+            </li>
         </ul>
     </nav>
 
-    
+    <header>
+        <h1>Seguimiento de sueño</h1>
+    </header>
+
+    <section>
+        <nav id="opciones">
+            <ul>
+                <li><a href="nuevoSuenio.html">Nuevo sueño</a></li>
+                <li><a href="#">Sueños anteriores</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        <h2>Entrada Anterior</h2>
+        <article>
+            <p class="datoNombre" id="fecha">Fecha: <label class="datoValor" for="fecha">Fecha</label></p>
+            <p class="datoNombre" id="horasDormidas">Horas dormidas: <label class="datoValor" for="fecha">Horas</label></p>
+            <p class="datoNombre" id="adestacar">A destacar: <label class="datoValor" for="adestacar">A Destacar</label></p>
+            <p class="datoNombre" id="descripcion">Descripción: <label class="datoValor" for="descripcion">Descripción</label></p>
+            <a href="#">Leer más</a>
+        </article>
+
+        <!-- 
+            <article>
+            <p class="datoEntrada" id="fecha">Fecha: <label for="fecha">Fecha</label></p>
+            <p class="datoEntrada" id="horasDormidas">Horas dormidas: <label for="fecha">Horas</label></p>
+            <p class="datoEntrada" id="adestacar">A destacar: <label for="adestacar">A Destacar</label></p>
+            <p class="datoEntrada" id="descripcion">Descripción: <label for="descripcion">Descripción</label></p>
+            <a href="#">Leer más</a>
+            </article>
+        -->
+    </section>
 </body>
 </html>

@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    background-color: #F2F4F6;
+    font-family: sans-serif;
+}
+
+h1 { 
+    color: #30353E;
+    margin-top: 1em;
+    text-align: center;
+}
+
+ul {
+    color: #30353E;
+    list-style-type: none;
+}
+
+#opciones {
+    float: left;
+    height:100vmax;
+}
+
+#opciones ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#opciones li {
+    margin-top: 1em;
+    padding: 0 2em 0 2em;
+}
+
+#opciones a, a {
+    color: #30353E;
+}
+
+.datoNombre {
+    font-weight: bold;
+}
+
+.datoValor {
+    font-weight: normal;
+}
+
+#cuenta {
+    right: 0;
+    background-color: #546071;
+    border-radius: .5em;
+}
+
+#cuenta:hover, .contenido-dropdown a:hover {
+    background-color: #9BA5B5;
+    border-radius: .5em;
+}
+
+.contenido-dropdown {
+    display: none;
+    float: right;
+    position: absolute;
+    right: 0;
+    margin: 0 .4em 0 1px;
+    background-color: #657389;
+    /* border-radius: .5em; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .contenido-dropdown {
+    border-radius: .5em;
+    display: block;
+}

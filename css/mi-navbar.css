@@ -1,0 +1,41 @@
+.navbar {
+    background-color: #30353E;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: .9em .4em;
+    display: inline-block;
+}
+
+.navbar li a {
+    color: #F2F4F6;
+    text-decoration: none;
+    display: block;
+    padding: .7em 1em;
+}
+
+.derecha {
+    float: right;
+    border-radius: .5em;
+    background-color: #546071;
+}
+
+.derecha:hover {
+    background-color: #9BA5B5;
+}
+
+#cuenta {
+    float: right;
+    background-color: #546071;
+    border-radius: .5em;
+}
+
+#cuenta:hover {
+    background-color: #9BA5B5;
+}

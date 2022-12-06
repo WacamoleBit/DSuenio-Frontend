@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/mi-navbar.css">
+    <link rel="stylesheet" href="../../css/forumulario.css">
+    <title>Nuevo Sueño</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="dsuenio.html">DSueño</a></li>
+        </ul>
+    </nav>
+
+    <div id="contenedor">
+        <form action="" method="post">
+            <label for="horas">Horas dormidas:</label>
+            <input type="number" min="1" name="Horas" id="horas">
+
+            <label for="descanso">Sensación de Escanso:</label>
+            <select name="Descanso" id="descanso">
+                <option value="nada">Nada</option>
+                <option value="poco">Poco</option>
+                <option value="medio">Medio</option>
+                <option value="mucho">Mucho</option>
+                <option value="completamente">Completamente</option>
+            </select>
+
+            <label for="descripcion">Descripción</label>
+            <textarea name="Descripcion" id="descripcion" cols="30" rows="10"></textarea>
+
+            <label for="adestacar">A Destacar:</label>
+            <textarea name="ADestacar" id="adestacar" maxlength="120"></textarea>
+
+            <label for="guardar"></label>
+            <button type="button" id="guardar">Guardar</button>
+        </form>
+    </div>
+</body>
+</html>

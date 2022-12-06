@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background-color: #F2F4F6;
+    font-family: sans-serif;
+}
+
+#contenedor {
+    border-radius: 5px;
+    background-color: #30353E;
+    margin-top: 1em;
+    padding: 1em;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: #F2F4F6;
+}
+
+input {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: .5em 0 2em 0;
+}
+
+button {
+    position: relative;
+    width: 100%;
+    margin: .5em 0;
+    padding: .5em;
+    border-radius: .5em;
+    border-color: #30353E;
+    background-color: #546071;
+    color: #F2F4F6;
+}
+
+button:hover {
+    background-color: #657389;
+}
+
+p {
+    margin: 0;
+    text-align: right;
+}
+
+#crearCuenta {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: .5em 0;
+    color: #F2F4F6;
+}
+
+select {
+    position: relative;
+    width: 100%;
+    margin: .5em 0 2em 0;
+}
+
+textarea {
+    position: relative;
+    width: 100%;
+    resize: none;
+    margin: .5em 0 2em 0;
+}

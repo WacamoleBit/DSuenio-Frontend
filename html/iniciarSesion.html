@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/iniciarSesion.css">
-    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="../css/mi-navbar.css">
+    <link rel="stylesheet" href="../css/forumulario.css">
+    <title>DSueño - Iniciar Sesión</title>
 </head>
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../html/index.html">DSueño</a></li>
+        </ul>
+    </nav>
+
     <div id="contenedor">
         <form>
             <label for="usuario">Usuario:</label>
@@ -16,7 +23,7 @@
             <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
             <label for="crearCuenta"></label>
             <button type="button" id="iniciarSesion">Iniciar Sesión</button>
-            <a href="crearCuenta.html">¿No tienes cuenta? Crea una cuenta</a>
+            <p>¿No tienes cuenta? <a href="crearCuenta.html" id="crearCuenta">Crea una cuenta</a></p>
         </form>
     </div>
 </body>
