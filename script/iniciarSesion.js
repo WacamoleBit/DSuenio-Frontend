@@ -6,14 +6,20 @@ b.addEventListener("click", () => {
     let usuario_ = eUsuario.value
     let contrasenia_ = eContrasenia.value;
 
-    axios.post("http://localhost:iniciarSesion," {
+    console.log(usuario_);
+    console.log(contrasenia_);
+
+    axios.post("https://proyecto-sistemas-web-backend-production.up.railway.app/iniciarSesion", {
+    // axios.post("http://localhost:4567/iniciarSesion", {       
         usuario: usuario_,
         contrasenia: contrasenia_
     })
     .then(function (res) {
+        console.log("exito")
         document.location = "dsuenio/dsuenio.html"
     })
     .catch(function (error) {
+        console.log("fallo")
         console.log(error)
     })
 })

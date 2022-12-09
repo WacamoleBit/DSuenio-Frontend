@@ -10,7 +10,8 @@ b.addEventListener("click", () => {
     let recontrasenia_ = eRecontrasenia.value;
     let email_ = eEmail.value;
 
-    axios.post("http://localhost:80/crearCuenta", {
+    axios.post("https://proyecto-sistemas-web-backend-production.up.railway.app/crearCuenta", {
+    // axios.post("http://localhost:4567/crearCuenta", {
         usuario: usuario_,
         contrasenia: contrasenia_,
         recontrasenia: recontrasenia_,
@@ -18,7 +19,6 @@ b.addEventListener("click", () => {
     })
     .then(function (res) {
         document.location = "creacionExitosa.html"
-        // window.open("creacionExitosa.html", '_self')
     })
     .catch(function (error) {
         console.log(error)  
