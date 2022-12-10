@@ -10,8 +10,8 @@ b.addEventListener("click", () => {
     let descripcion_ = eDescripcion.value
     let aDestacar_ = eADestacar.value
 
-    axios.post("https://proyecto-sistemas-web-backend-production.up.railway.app/crearEntrada", {
-    // axios.post("http://localhost:4567/crearEntrada", {
+    // axios.post("https://proyecto-sistemas-web-backend-production.up.railway.app/crearEntrada", {
+    axios.post("http://localhost:4567/crearEntrada", {
         horas: horas_,
         descanso: descanso_,
         descripcion: descripcion_,

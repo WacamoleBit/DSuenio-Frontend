@@ -2,8 +2,8 @@ const seccionEntradas = document.getElementById("entradas");
 var entradas = [];
 
 window.onload = () => {
-    axios.get("https://proyecto-sistemas-web-backend-production.up.railway.app/cargarEntradas")
-    // axios.get("http://localhost:4567/cargarEntradas")
+    // axios.get("https://proyecto-sistemas-web-backend-production.up.railway.app/cargarEntradas")
+    axios.get("http://localhost:4567/cargarEntradas")
     .then(function (res) {
         if(res.data.length <= 0) {
             console.log("sinDatos")
