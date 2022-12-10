@@ -15,8 +15,12 @@ b.addEventListener("click", () => {
         contrasenia: contrasenia_
     })
     .then(function (res) {
-        console.log("exito")
-        document.location = "dsuenio/dsuenio.html"
+        if(res.data) {
+            console.log("exito")
+            document.location = "dsuenio/dsuenio.html"
+        } else {
+            console.log("fallo")
+        }
     })
     .catch(function (error) {
         console.log("fallo")
