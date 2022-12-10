@@ -6,8 +6,6 @@ window.onload = () => {
     // axios.get("http://localhost:4567/cargarEntradas")
     .then(function (res) {
         if(res.data.length <= 0) {
-            console.log("sinDatos")
-
             seccionEntradas.innerHTML = sinDatos();
         } else {
             seccionEntradas.innerHTML = "<h2>Ultima Entrada</h2>";
@@ -19,7 +17,6 @@ window.onload = () => {
         }
     })
     .catch(function (error) {
-        console.log("fallo")
         console.log(error)
     })
 }
