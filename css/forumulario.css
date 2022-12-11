@@ -63,3 +63,8 @@ textarea {
     resize: none;
     margin: .5em 0 2em 0;
 }
+
+.mensaje {
+    display: none;
+    color: red;
+}
