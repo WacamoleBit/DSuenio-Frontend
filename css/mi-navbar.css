@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #30353E;
+    background-color: #40275E;
 }
 
 .navbar ul {
@@ -23,11 +23,12 @@
 .derecha {
     float: right;
     border-radius: .5em;
-    background-color: #546071;
+    background-color: #614485;
+    /* background-color: #8B69B5; */
 }
 
 .derecha:hover {
-    background-color: #9BA5B5;
+    background-color: #8B69B5;
 }
 
 #cuenta {

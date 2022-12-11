@@ -6,7 +6,7 @@ body {
 
 #contenedor {
     border-radius: 5px;
-    background-color: #30353E;
+    background-color: #40275E;
     margin-top: 1em;
     padding: 1em;
     margin-left: 30%;
@@ -28,13 +28,14 @@ button {
     margin: .5em 0;
     padding: .5em;
     border-radius: .5em;
-    border-color: #30353E;
-    background-color: #546071;
+    border-color: #614485;
+    background-color: #614485;
     color: #F2F4F6;
 }
 
 button:hover {
-    background-color: #657389;
+    border-color: #8B69B5;
+    background-color: #8B69B5;
 }
 
 p {

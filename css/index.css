@@ -24,12 +24,12 @@ div {
     margin-top: 1em;
     margin-left: 6em;
     border-radius: .5em;
-    background-color: #546071;
+    background-color: #614485;
     display: inline-block;
 }
 
 div:hover {
-    background-color: #657389;
+    background-color: #8B69B5;
 }
 
 #registro {
