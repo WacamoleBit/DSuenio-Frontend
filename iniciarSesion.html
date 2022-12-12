@@ -13,27 +13,30 @@
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="index.html">DSueño</a></li>
+            <li><a href="index.html">Inicio</a></li>
         </ul>
     </nav>
 
-    <div id="contenedor">
-        <form action="" method="get">
-            <label for="usuario">Usuario:</label>
-            <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+    <main>
+        <div id="contenedor">
+            <form action="" method="get">
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+    
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+    
+                <label for="crearCuenta"></label>
+                <button type="button" id="iniciarSesion">Iniciar Sesión</button>
+    
+                <p id="msjUsuario" class="mensaje">Ingrese un usuario valido</p>
+                <p id="msjContrasenia" class="mensaje">Ingrese una contraseña valida</p>
+                <p id="msjNoEncotrado" class="mensaje">Usuario no encontrado, revise los datos</p>
+                
+                <p>¿No tienes cuenta? <a href="/cuenta/crearCuenta.html" id="crearCuenta">Crea una cuenta</a></p>
+            </form>
+        </div>
+    </main>
 
-            <label for="contraseña">Contraseña:</label>
-            <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
-
-            <label for="crearCuenta"></label>
-            <button type="button" id="iniciarSesion">Iniciar Sesión</button>
-
-            <p id="msjUsuario" class="mensaje">Ingrese un usuario valido</p>
-            <p id="msjContrasenia" class="mensaje">Ingrese una contraseña valida</p>
-            <p id="msjNoEncotrado" class="mensaje">Usuario no encontrado, revise los datos</p>
-            
-            <p>¿No tienes cuenta? <a href="/cuenta/crearCuenta.html" id="crearCuenta">Crea una cuenta</a></p>
-        </form>
-    </div>
 </body>
 </html>

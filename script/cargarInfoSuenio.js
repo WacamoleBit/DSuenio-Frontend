@@ -12,7 +12,7 @@ window.onload = () => {
 
             for(let i = 0; i < res.data.length; i++){
                 entradas[i] = res.data[i];
-                seccionEntradas.innerHTML = conDatos(entradas[i])
+                seccionEntradas.appendChild(conDatos(entradas[i]))
             }
         }
     })
@@ -30,12 +30,56 @@ function sinDatos() {
 }
 
 function conDatos(data) {
-    var cadena = "<article>"
-               + "<p class='datoEntrada' id='fecha'>Fecha: <label for='fecha'>" + data.fechaCreacion + "</label></p>"
-               + "<p class='datoEntrada' id='horasDormidas'>Horas dormidas: <label for='horasDormidas'>" + data.horasDormidas + "</label></p>"
-               + "<p class='datoEntrada' id='adestacar'>A destacar: <label for='adestacar'>" + data.aDestacar + "</label></p>"
-               + "<p class='datoEntrada' id='descripcion' display='none'>Descripción: <label for='descripcion'>" + data.descripcion+ "</label></p>"
-               + "</article>"
+    let article = document.createElement("article")
+    let br = document.createElement("br")
 
-    return cadena;
+    let fecha = document.createElement("p")
+    fecha.className = "datoEntrada"
+    fecha.id = "fecha"
+    fecha.textContent = "Fecha: "
+
+    let labelFecha = document.createElement("label")
+    labelFecha.setAttribute("for", "fecha")
+    labelFecha.textContent = data.fechaCreacion
+
+    fecha.appendChild(labelFecha)
+
+    let horas = document.createElement("p")
+    horas.className ="datoEntrada"
+    horas.id = "horasDormidas"
+    horas.textContent = "Horas dormidas: "
+
+    let labelHoras = document.createElement("label")
+    labelHoras.setAttribute("for", "horasDormidas")
+    labelHoras.textContent = data.horasDormidas
+
+    horas.appendChild(labelHoras)
+
+    let destacar = document.createElement("p")
+    destacar.className = "datoEntrada"
+    destacar.id = "adestacar"
+    destacar.textContent = "A destacar: "
+
+    let labelDestacar = document.createElement("label")
+    labelDestacar.setAttribute("for", "adestacar")
+    labelDestacar.textContent = data.aDestacar
+
+    destacar.appendChild(labelDestacar)
+
+    let descripcion = document.createElement("p")
+    descripcion.className = "datoEntrada"
+    descripcion.id = "descripcion"
+    descripcion.textContent = "Descripción: "
+
+    let labelDescripcion = document.createElement("label")
+    labelDescripcion.setAttribute("for", "descripcion")
+    labelDescripcion.textContent = data.descripcion
+
+    article.appendChild(fecha)
+    article.appendChild(horas)
+    article.appendChild(destacar)
+    article.appendChild(descripcion)
+    article.appendChild(br)
+
+    return article;
 }
