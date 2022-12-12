@@ -1,4 +1,4 @@
-# Dsueño
+# DSueño - Frontend
 
 ## Link
 
@@ -7,6 +7,7 @@
 ## Informacion
 
 Proyecto de desarrollo de un sitio web para la Experiencia Educativa: Sistemas Web
+
 
 ## Consideraciones:
 
