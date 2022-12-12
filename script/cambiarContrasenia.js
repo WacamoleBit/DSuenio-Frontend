@@ -12,8 +12,8 @@ b.addEventListener("click", () => {
     restaurarComponentes()
 
     if(validarContrasenia(contrasenia_, recontrasenia_)) {
-        // axios.post("https://proyecto-sistemas-web-backend-production.up.railway.app/cambiarContrasenia", {
-        axios.post("http://localhost:4567/cambiarContrasenia", {       
+        axios.post("https://proyecto-sistemas-web-backend-production.up.railway.app/cambiarContrasenia", {
+        // axios.post("http://localhost:4567/cambiarContrasenia", {       
             contrasenia: contrasenia_,
         })
         .then(function (res) {

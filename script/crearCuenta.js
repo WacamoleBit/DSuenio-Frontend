@@ -18,8 +18,8 @@ b.addEventListener("click", () => {
     restaurarComponentes()
 
     if(validarDatos(usuario_, contrasenia_, recontrasenia_, email_)) {
-        // axios.post("https://proyecto-sistemas-web-backend-production.up.railway.app/crearCuenta", {
-        axios.post("http://localhost:4567/crearCuenta", {
+        axios.post("https://proyecto-sistemas-web-backend-production.up.railway.app/crearCuenta", {
+        // axios.post("http://localhost:4567/crearCuenta", {
             usuario: usuario_,
             contrasenia: contrasenia_,
             email: email_

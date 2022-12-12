@@ -12,8 +12,8 @@ b.addEventListener("click", () => {
     restaurarComponentes()
 
     if(validar(usuario_, contrasenia_)) {
-        // axios.post("https://proyecto-sistemas-web-backend-production.up.railway.app/iniciarSesion", {
-        axios.post("http://localhost:4567/iniciarSesion", {       
+        axios.post("https://proyecto-sistemas-web-backend-production.up.railway.app/iniciarSesion", {
+        // axios.post("http://localhost:4567/iniciarSesion", {       
             usuario: usuario_,
             contrasenia: contrasenia_
         })
