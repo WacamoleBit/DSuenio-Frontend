@@ -75,6 +75,8 @@ function conDatos(data) {
     labelDescripcion.setAttribute("for", "descripcion")
     labelDescripcion.textContent = data.descripcion
 
+    descripcion.appendChild(labelDescripcion)
+
     article.appendChild(fecha)
     article.appendChild(horas)
     article.appendChild(destacar)
